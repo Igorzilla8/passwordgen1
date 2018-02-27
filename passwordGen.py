@@ -1,4 +1,11 @@
+#Code Test: Write a password generator script in Python. 
 #Make sure that the generated passwords are unique and strong, 
+#meaning they always have a mix of lowercase letters, uppercase letters, 
+#numbers, and symbols. The script should take as an argument a passwords 
+#length and print the password to console. Extra: add a script switch to 
+#also print the time required to crack the generated password with brute 
+#force (assume that hacker can test 10M passwords per second). 
+
 import sys
 import string
 import random
@@ -7,6 +14,10 @@ minPassLen = 4 			# minimal length of the password
 maxPassLen = 60			# maximal length of the password
 bruteCalcPerformance = 10000000 # performance of brute force cracking 
 
+# collection of characters which will be used for creation of the password	
+string.letters 	= 'abcdefghjkmnpqrstuvwxyz'  # included in collection
+string.lettersC = 'ABCDEFGHIJKMNPQRSTUVWXYZ' # included in collection
+string.numbers 	= '23456789' 			# included in collection
 string.symbols 	= '@#$%' 				# included in collection
 string.ambigous = '{}[]()/\'"`~,;:.<>' 	# excluded from collection
 string.similar 	= 'il1Lo0O' 			# excluded from collection
