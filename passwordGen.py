@@ -1,10 +1,20 @@
-#Code Test: Write a password generator script in Python. 
-#Make sure that the generated passwords are unique and strong, 
-#meaning they always have a mix of lowercase letters, uppercase letters, 
-#numbers, and symbols. The script should take as an argument a passwords 
-#length and print the password to console. Extra: add a script switch to 
-#also print the time required to crack the generated password with brute 
-#force (assume that hacker can test 10M passwords per second). 
+###############################################################################
+#
+# File:         passwordGen.py
+# Description:  Code Test: Write a password generator script in Python. 
+#               Make sure that the generated passwords are unique and strong, 
+#               meaning they always have a mix of lowercase letters, uppercase letters, 
+#               numbers, and symbols. The script should take as an argument a passwords 
+#               length and print the password to console. Extra: add a script switch to 
+#               also print the time required to crack the generated password with brute 
+#               force (assume that hacker can test 10M passwords per second). 
+# Author:       Igor Rozman
+# Created:      27.02.2018
+# Modified:     
+# Language:     PYTHON (v 3.6.4)
+# Package:      
+#
+###############################################################################
 
 import sys
 import string
